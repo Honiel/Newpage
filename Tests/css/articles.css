@@ -1,0 +1,50 @@
+@font-face {
+		font-family: 'Sucrose Bold Two';
+		src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+		}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  font-family: 'Sucrose Bold Two';
+  background-image: url(../img/para2.svg);
+  background-size: cover;
+}
+
+header img {
+  position: relative;
+	top: 0;
+	right: 0;
+	width: 100vw;
+}
+
+header h1 {
+  position: fixed;
+	top: 2rem;
+	right: 2rem;
+  font-size: 12vw;
+  font-variant: small-caps;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+  opacity: .8;
+  color: #fff;
+}
+
+main {
+  position: relative;
+  font-family: 'IM Fell French Canon Pro';
+  font-size: 1.4rem;
+  padding: 2rem 25%;
+  line-height: 1.6;
+}
+
+@media all and (max-width: 400px) {
+  main { padding: 2rem; }
+}

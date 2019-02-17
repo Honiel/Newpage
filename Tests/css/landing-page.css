@@ -1,0 +1,213 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/bird.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -1px 1px;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: Chivo, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  opacity: .8;
+}
+
+#intro {
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#title {
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#b, #a, #l, #m, #apostrophe, #s {
+  animation-name: letters;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+#b {
+  animation-delay: 1.0s;
+  animation-duration: 0.2s;
+}
+
+#a {
+  animation-delay: 1.2s;
+  animation-duration: 0.2s;
+}
+
+#l {
+  animation-delay: 1.4s;
+  animation-duration: 0.2s;
+}
+
+#m {
+  animation-delay: 1.6s;
+  animation-duration: 0.2s;
+}
+
+#apostrophe {
+  animation-delay: 1.8s;
+  animation-duration: 0.2s;
+}
+
+#s {
+  animation-delay: 2.0s;
+  animation-duration: 0.2s;
+}
+
+.button {
+    position: absolute;
+    right: 50%;
+    bottom: -40px;
+    transform: translateX(50%);
+}
+
+#button {
+  position: relative;
+  top: 55px;
+}
+
+.button, #button {
+  background-color: #DFE166;
+  color: #5D535E;
+  font-family: Chivo, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 6px 32px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+#part1 {
+  height: 100vh;
+}
+
+#part2 {
+  height: 460px;
+  background-color: #5d535e;
+}
+
+#profile {
+  width: 600px;
+  height: fit-content;
+  position: relative;
+  top: 15%;
+  left: 10%;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+hr {
+  width: 30%;
+  margin-top: 25px;
+}
+
+#part3 {
+  font-family: Chivo, serif;
+  font-size: 30px;
+  font-variant: small-caps;
+  background-color: #ffffff;
+  height: 100px;
+  border-bottom: 2px dotted #ec96a4;
+}
+
+#part3 ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100px;
+}
+
+#part3 li {
+  display: inline-block;
+  height: 100px;
+}
+
+#part3 a {
+  display: block;
+  color: rgba(0, 0, 0, 0.8);
+  transition: background-color .3s ease-in-out;
+  height: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  line-height: 100px;
+}
+
+#part3 a:visited {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+#part3 a:hover {
+  background-color: #ec96a4;
+}
+
+#part4 {
+  height: 560px;
+  margin-top: 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8)
+
+}
+
+#map {
+  height:60%;
+  background-image: url(../img/map.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fund-me {
+  height: 40%;
+  margin-top: 70px;
+}
+
+#fund-me h2 {
+  font-variant: small-caps;
+  font-family: philosopher;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+#part4 hr {
+  width: 30%;
+  margin-top: 65px;
+}
+
+@media(max-width: 795px) {
+  #part3 {
+    height: 200px;
+  }
+}
+
+@keyframes letters {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
